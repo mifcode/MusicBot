@@ -2975,3 +2975,16 @@ class MusicBot(discord.Client):
             if vc.guild == guild:
                 return vc
         return None
+
+    async def cmd_jimi(self, message, player, channel, author, permissions, leftover_args):
+        """
+        Plays some Jimi!
+
+        ***ALL HAIL LORD MAXWELL***
+        """
+        jimi = "jimi hendrix all along the watchtower".split()
+        response = await self.cmd_play(message, player, channel, author, permissions, jimi, "")
+
+        response._content += "   ***ALL HAIL LORD MAXWELL*** "
+
+        return response
