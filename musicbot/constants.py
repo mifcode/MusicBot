@@ -1,6 +1,7 @@
 import os.path
+import subprocess
 
-MAIN_VERSION = 'release-120519'
+MAIN_VERSION = 'release-260819'
 SUB_VERSION = '-eth1'
 VERSION = MAIN_VERSION + SUB_VERSION
 
